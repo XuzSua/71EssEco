@@ -33,7 +33,7 @@ public class Main extends JavaPlugin{
 		
 		if(Bukkit.getPluginManager().getPlugin("71Ess") == null) {
 			
-			this.getLogger().info("�䤣�즹���󪺮֤ߡG71Ess�A�w�פ��C");
+			this.getLogger().info("找不到核心插件：71Ess，已終止插件");
 			
 			this.getPluginLoader().disablePlugin(this.getServer().getPluginManager().getPlugin("71EssEco"));
 			

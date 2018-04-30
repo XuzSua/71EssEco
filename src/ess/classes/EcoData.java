@@ -40,7 +40,7 @@ public class EcoData {
 		
 		if(String.valueOf(money).length() > 10) {
 			
-			plugin.getLogger().info("¶W¹L´¡¥óªºª÷¿ú¤W­­¡G10¦ì¼Æ");
+			plugin.getLogger().info("è¶…éé‡‘éŒ¢ä¸Šé™ï¼Œåä½æ•¸");
 			return;
 			
 		}
