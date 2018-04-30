@@ -18,7 +18,7 @@ public class LoginRecord implements Listener{
 		plugin.mc.set(e.getPlayer().getName() + ".money",0);
 		plugin.mc.set(e.getPlayer().getName() + ".bought", 0);
 		
-		plugin.getLogger().info(" [經濟系統] 玩家不存在，已生產一份檔案");
+		plugin.getLogger().info(" [經濟系統] " + e.getPlayer().getName() + " 玩家不存在，已生產一份檔案");
 		
 	}
 

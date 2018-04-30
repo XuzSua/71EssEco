@@ -33,7 +33,7 @@ public class Main extends JavaPlugin{
 		
 		if(Bukkit.getPluginManager().getPlugin("71Ess") == null) {
 			
-			this.getLogger().info("æ‰¾ä¸åˆ°æ ¸å¿ƒæ’ä»¶ï¼š71Essï¼Œå·²çµ‚æ­¢æ’ä»¶");
+			this.getLogger().info("§ä¤£¨ì®Ö¤ß´¡¥ó¡G71Ess¡A¤w²×¤î´¡¥ó");
 			
 			this.getPluginLoader().disablePlugin(this.getServer().getPluginManager().getPlugin("71EssEco"));
 			

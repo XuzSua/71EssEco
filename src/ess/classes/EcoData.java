@@ -40,7 +40,7 @@ public class EcoData {
 		
 		if(String.valueOf(money).length() > 10) {
 			
-			plugin.getLogger().info("è¶…éŽé‡‘éŒ¢ä¸Šé™ï¼Œåä½æ•¸");
+			plugin.getLogger().info("¶W¹Lª÷¿ú¤W­­¡A¤Q¦ì¼Æ");
 			return;
 			
 		}
@@ -50,6 +50,23 @@ public class EcoData {
 		
 		plugin.reloadFile();
 		
+	}
+	
+	public static void setMoney(Player player, int amount)
+	{
+		
+		int money = plugin.mc.getInt(player.getName() + ".money", 0);
+		
+		if (String.valueOf(money).length() > 10)
+		{
+			
+			plugin.getLogger().info("¶W¹Lª÷¿ú¤W­­¡A¤Q¦ì¼Æ");
+			return;
+			
+		}
+		plugin.mc.set(player.getName() + ".money", amount);
+		
+		plugin.reloadFile();
 	}
 	
 	public static boolean BankRupted(Player player) {
