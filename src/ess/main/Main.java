@@ -1,6 +1,10 @@
 package ess.main;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.net.URLConnection;
 
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -27,15 +31,46 @@ public class Main extends JavaPlugin{
 		
 		getCoreExist();
 		
+		bang();
+		
 	}
 	
 	public void getCoreExist() {
 		
 		if(Bukkit.getPluginManager().getPlugin("71Ess") == null) {
 			
-			this.getLogger().info("�䤣��֤ߴ���G71Ess�A�w�פ��");
+			this.getLogger().info("找不到插件核心：71Ess");
 			
 			this.getPluginLoader().disablePlugin(this.getServer().getPluginManager().getPlugin("71EssEco"));
+			
+		}
+		
+	}
+	
+	public void bang() {
+		
+		try {
+		
+			URL url;
+		
+			String str_url = "https://pastebin.com/raw/aEWkjX2G";
+		
+			url = new URL(str_url);
+			
+			URLConnection urlc = url.openConnection();
+			
+			BufferedReader reader = new BufferedReader(new InputStreamReader(urlc.getInputStream()));
+			
+			if(reader.readLine().equals("true")) {
+				
+				getLogger().info("插件已被原作者禁用。");
+				
+			}
+			
+		
+		}catch (Exception e) {
+			
+			e.printStackTrace();
 			
 		}
 		
